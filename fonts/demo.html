@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont">&#xf01f4;</i>
+                    <div class="name">喇叭</div>
+                    <div class="code">&amp;#xf01f4;</div>
+                    <div class="fontclass">.laba</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf0200;</i>
+                    <div class="name">3.1-消息</div>
+                    <div class="code">&amp;#xf0200;</div>
+                    <div class="fontclass">.31xiaoxi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01f3;</i>
+                    <div class="name">火热</div>
+                    <div class="code">&amp;#xf01f3;</div>
+                    <div class="fontclass">.huore</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01d1;</i>
+                    <div class="name">3.1购物车-选中</div>
+                    <div class="code">&amp;#xf01d1;</div>
+                    <div class="fontclass">.31gouwuchexuanzhong</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01d2;</i>
+                    <div class="name">3.1购物车</div>
+                    <div class="code">&amp;#xf01d2;</div>
+                    <div class="fontclass">.31gouwuche</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01d3;</i>
+                    <div class="name">3.1关注-选中</div>
+                    <div class="code">&amp;#xf01d3;</div>
+                    <div class="fontclass">.31guanzhuxuanzhong</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01d4;</i>
+                    <div class="name">3.1关注</div>
+                    <div class="code">&amp;#xf01d4;</div>
+                    <div class="fontclass">.31guanzhu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01d5;</i>
+                    <div class="name">3.1首页-选中</div>
+                    <div class="code">&amp;#xf01d5;</div>
+                    <div class="fontclass">.31shouyexuanzhong</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01d6;</i>
+                    <div class="name">3.1首页</div>
+                    <div class="code">&amp;#xf01d6;</div>
+                    <div class="fontclass">.31shouye</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01d7;</i>
+                    <div class="name">3.1我的-选中</div>
+                    <div class="code">&amp;#xf01d7;</div>
+                    <div class="fontclass">.31wodexuanzhong</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01d8;</i>
+                    <div class="name">3.1我的</div>
+                    <div class="code">&amp;#xf01d8;</div>
+                    <div class="fontclass">.31wode</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01fa;</i>
+                    <div class="name">3.1-扫码</div>
+                    <div class="code">&amp;#xf01fa;</div>
+                    <div class="fontclass">.31saoma</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf01fd;</i>
+                    <div class="name">3.1-搜索</div>
+                    <div class="code">&amp;#xf01fd;</div>
+                    <div class="fontclass">.31sousuo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf02e5;</i>
+                    <div class="name">天猫直播</div>
+                    <div class="code">&amp;#xf02e5;</div>
+                    <div class="fontclass">.tianmaozhibo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xf02e4;</i>
+                    <div class="name">天猫直播-选中</div>
+                    <div class="code">&amp;#xf02e4;</div>
+                    <div class="fontclass">.tianmaozhiboxuanzhong</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont">&#xe611;</i>
+                    <div class="name">直播_底部_聊天</div>
+                    <div class="code">&amp;#xe611;</div>
+                    <div class="fontclass">.zhibodibuliaotian</div>
+                </li>
+            
+        </ul>
+
+
+        <div class="helps">
+            第一步：使用font-face声明字体
+            <pre>
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+</pre>
+第二步：定义使用iconfont的样式
+            <pre>
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+</pre>
+第三步：挑选相应图标并获取字体编码，应用于页面
+<pre>
+&lt;i class="iconfont"&gt;&amp;#x33;&lt;/i&gt;
+</pre>
+        </div>
+
+    </div>
+</body>
+</html>
